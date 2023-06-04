@@ -1,0 +1,20 @@
+@model Product
+
+<h3>@Model.ProductName</h3>
+<h3>@Model.Price</h3>
+<div class="btn-group">
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">
+        <i class="fa-solid fa-house"></i>
+        Home</a>
+    <a class="btn btn-outline-primary" asp-controller="Product" asp-action="Index">
+        <i class="fa-solid fa-layer-group"></i>
+        Products</a>
+</div>
+
+@* @section Header{
+<div>
+<p>
+Only For <b>Get</b> Header
+</p>
+</div>
+} *@
