@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9EZqGF/dAYfIYB5M0tQEUtiP7Q7PjFNQLptxDziqsFg=",
+  "Hash": "AR4YUUndd0Fr9j2d6NJHZlHsLPs+uyWvqdAASLq+KLc=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "wwwroot\\html\\Error.html"
     },
     {
+      "Identity": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\images\\default.jpeg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "images/default.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default.jpeg"
+    },
+    {
       "Identity": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\images\\default.png",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\default.png"
+    },
+    {
+      "Identity": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\images\\stock-vector-goat-logo-template-design-vector-emblem-design-concept-creative-symbol-icon-1140271190.jpg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "images/stock-vector-goat-logo-template-design-vector-emblem-design-concept-creative-symbol-icon-1140271190.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\stock-vector-goat-logo-template-design-vector-emblem-design-concept-creative-symbol-icon-1140271190.jpg"
     },
     {
       "Identity": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\js\\site.js",

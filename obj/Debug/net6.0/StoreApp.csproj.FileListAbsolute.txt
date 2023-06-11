@@ -55,3 +55,7 @@ C:\kamp-frontend\Store\StoreApp\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlit
 C:\kamp-frontend\Store\StoreApp\obj\Debug\net6.0\StoreApp.csproj.CopyComplete
 C:\kamp-frontend\Store\StoreApp\bin\Debug\net6.0\StoreApp.staticwebassets.runtime.json
 C:\kamp-frontend\Store\StoreApp\bin\Debug\net6.0\libman.json
+C:\kamp-frontend\Store\StoreApp\bin\Debug\net6.0\Entities.dll
+C:\kamp-frontend\Store\StoreApp\bin\Debug\net6.0\Entities.pdb
+C:\kamp-frontend\Store\StoreApp\bin\Debug\net6.0\Repositories.dll
+C:\kamp-frontend\Store\StoreApp\bin\Debug\net6.0\Repositories.pdb

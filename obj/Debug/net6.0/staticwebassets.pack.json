@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets\\html\\Error.html"
     },
     {
+      "Id": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\images\\default.jpeg",
+      "PackagePath": "staticwebassets\\images\\default.jpeg"
+    },
+    {
       "Id": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\images\\default.png",
       "PackagePath": "staticwebassets\\images\\default.png"
+    },
+    {
+      "Id": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\images\\stock-vector-goat-logo-template-design-vector-emblem-design-concept-creative-symbol-icon-1140271190.jpg",
+      "PackagePath": "staticwebassets\\images\\stock-vector-goat-logo-template-design-vector-emblem-design-concept-creative-symbol-icon-1140271190.jpg"
     },
     {
       "Id": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\js\\site.js",
