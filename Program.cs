@@ -25,11 +25,19 @@ var app = builder.Build();
 app.UseStaticFiles();///wwwroot klasörünün kullanılabilir hale gelmesi
 app.UseHttpsRedirection();
 app.UseRouting();
-
-
-
-app.MapControllerRoute(
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"
     );
+
+    endpoints.MapAreaControllerRoute(
+        name: "Admin",
+        areaName: "Admin",
+        pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}"
+        );
+});
+
+
 app.Run();
