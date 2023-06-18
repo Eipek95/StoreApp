@@ -1,5 +1,6 @@
-﻿using Entitites.Models;
+﻿using Entities.Dtos;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Services.Contracts;
 
 namespace StoreApp.Areas.Admin.Controllers
@@ -22,14 +23,24 @@ namespace StoreApp.Areas.Admin.Controllers
         [HttpGet]
         public ActionResult Create()
         {
+            ViewBag.Categories = GetCategoriesSelectList();
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([FromForm] Product model)
+        public async Task<ActionResult> Create([FromForm] ProductDtoForInsertion model, IFormFile file)
         {
             if (ModelState.IsValid)
             {
+                //file operation
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", file.FileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+                model.ImageUrl = String.Concat("/images/", file.FileName);
+
                 _manager.ProductService.CreateProduct(model);
                 return RedirectToAction("Index");
 
@@ -40,15 +51,25 @@ namespace StoreApp.Areas.Admin.Controllers
         [HttpGet]
         public ActionResult Update([FromRoute(Name = "id")] int id)
         {
-            var product = _manager.ProductService.GetOneProduct(id, false);
+            ViewBag.Categories = GetCategoriesSelectList();
+            var product = _manager.ProductService.GetOneProductForUpdate(id, false);
             return View(product);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Update([FromForm] Product model)
+        public async Task<ActionResult> Update([FromForm] ProductDtoForUpdate model, IFormFile file)
         {
             if (ModelState.IsValid)
             {
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", file.FileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+                model.ImageUrl = String.Concat("/images/", file.FileName);
+
+
                 _manager.ProductService.CreateUpdate(model);
                 return RedirectToAction("Index");
 
@@ -61,6 +82,15 @@ namespace StoreApp.Areas.Admin.Controllers
         {
             _manager.ProductService.DeleteOneProduct(id);
             return RedirectToAction("Index");
+        }
+
+        private SelectList GetCategoriesSelectList()
+        {
+            return new SelectList(_manager.CategoryService.GetAllCategories(false),
+                "CategoryId",
+                "CategoryName",
+                "1"
+                );
         }
     }
 }
