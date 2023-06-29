@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mFGr7UderSqFzKoxos2AoH97WKD5QDyV6tq1OQ63km4=",
+  "Hash": "JdzghLSVddgCOQ+/ylBiib8adIRugrWMlTLtTOQj7EY=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\6.jpg"
+    },
+    {
+      "Identity": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\images\\antoine_griezmann___2016-wallpaper-1920x1080.jpg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "images/antoine_griezmann___2016-wallpaper-1920x1080.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\antoine_griezmann___2016-wallpaper-1920x1080.jpg"
     },
     {
       "Identity": "C:\\kamp-frontend\\Store\\StoreApp\\wwwroot\\images\\arrival_at_saturn-wallpaper-1920x1080.jpg",
