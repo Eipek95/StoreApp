@@ -29,7 +29,7 @@ namespace StoreApp.Models
         public override void Clear()
         {
             base.Clear();
-            Session?.Remove("cart");
+            Session?.Remove("Cart");
         }
 
         public override void RemoveLine(Product product)

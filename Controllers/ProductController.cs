@@ -1,3 +1,4 @@
+using Entities.RequestParameters;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 
@@ -13,14 +14,14 @@ namespace StoreApp.Controllers
             _serviceManager = serviceManager;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(ProductRequestParameters p)
         {
             // var context = new RepositoryContext(
             //     new DbContextOptionsBuilder<RepositoryContext>()
             //     .UseSqlite("DataSource=C:\\Users\\Msi\\Documents\\Sqlite\\ProductDb.db")
             //     .Options
             // );
-            var model = _serviceManager.ProductService.GetAllProducts(false);
+            var model = _serviceManager.ProductService.GetAllProductsWithDetails(p);
             return View(model);
         }
 
